@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+{
+    float a,b,c,x1,x2,x,d;
+    scanf("%f",&a);
+    scanf("%f",&b);
+    scanf("%f",&c);
+    d=b*b-4*a*c;
+    if (d<0) 
+    printf("Корней нет");
+    else if (d==0) {
+        x=-b/(2*a);
+        printf("%f",x);
+    } else {
+        x1=(-b-sqrt(d))/(2*a);
+        x2=(-b+sqrt(d))/(2*a);
+        printf("%f",x1);
+        printf("%f",x2);
+    }
+    return 0;
+}
